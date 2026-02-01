@@ -6,19 +6,24 @@ function aceptar() {
     document.getElementById("respuesta").innerHTML =
         "💖 Gracias por decir que sí 💖<br>" +
         "Prometo cuidarte, apoyarte y hacerte sonreír.<br>" +
-        "Feliz San Valentín, Shaday ❤️";
+        "Feliz San Valentín, Mi vida ❤️";
 
     lanzarCorazones();
 }
 
 function moverNo() {
     const boton = document.querySelector(".no");
-    const x = Math.random() * 200;
-    const y = Math.random() * 30;
+
+    const ancho = window.innerWidth - boton.offsetWidth;
+    const alto = window.innerHeight - boton.offsetHeight;
+
+    const x = Math.random() * ancho;
+    const y = Math.random() * alto;
 
     boton.style.left = x + "px";
     boton.style.top = y + "px";
 }
+
 
 function lanzarCorazones() {
     for (let i = 0; i < 15; i++) {

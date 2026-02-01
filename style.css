@@ -34,9 +34,10 @@ h2 {
 }
 
 .buttons {
-    margin-top: 18px;
-    position: relative;
-    height: 55px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 button {
@@ -59,8 +60,7 @@ button {
 
 .no {
     background: #ccc;
-    position: absolute;
-    right: 0;
+    position: fixed;
 }
 
 #respuesta {

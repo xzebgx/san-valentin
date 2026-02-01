@@ -60,7 +60,6 @@ button {
 
 .no {
     background: #ccc;
-    position: fixed;
 }
 
 #respuesta {
@@ -86,4 +85,5 @@ button {
     margin-top: 10px;
     color: #444;
 }
+
 

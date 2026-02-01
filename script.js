@@ -14,6 +14,8 @@ function aceptar() {
 function moverNo() {
     const boton = document.querySelector(".no");
 
+    boton.style.position = "fixed";
+
     const ancho = window.innerWidth - boton.offsetWidth;
     const alto = window.innerHeight - boton.offsetHeight;
 
@@ -23,6 +25,7 @@ function moverNo() {
     boton.style.left = x + "px";
     boton.style.top = y + "px";
 }
+
 
 
 function lanzarCorazones() {
@@ -39,3 +42,4 @@ function lanzarCorazones() {
         setTimeout(() => corazon.remove(), 3000);
     }
 }
+
